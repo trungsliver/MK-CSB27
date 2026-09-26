@@ -58,7 +58,7 @@ print(num_list)
 print('Max value:', max(num_list))
 print('Min value:', min(num_list))
 
-# Tìm vị trí phhaafn tử lớn nhất / nhỏ nhất
+# Tìm vị trí phần tử lớn nhất / nhỏ nhất
 print('Index of max value:', num_list.index(max(num_list)))
 print('Index of min value:', num_list.index(min(num_list)))
 
