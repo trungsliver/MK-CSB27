@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Tiến Dũng",
+        "age": 14,
+        "gender": "male"
+    },
+    {
+        "name": "Ngọc Huy",
+        "age": 15,
+        "gender": "male"
+    },
+    {
+        "name": "Minh Ngọc",
+        "age": 14,
+        "gender": "female"
+    }
+]
