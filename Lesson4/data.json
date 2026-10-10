@@ -187,5 +187,41 @@
         "region": "Morocco",
         "club": "Paris Saint-Germain",
         "worth": 65000000
+    },
+    {
+        "id": 22,
+        "name": "Thế Chương",
+        "dob": "2011-06-17",
+        "position": "ST",
+        "region": "Russian",
+        "club": "Manchester United",
+        "worth": 1000
+    },
+    {
+        "id": 23,
+        "name": "Thế Chương",
+        "dob": "2011-06-17",
+        "position": "ST",
+        "region": "Russian",
+        "club": "Manchester United",
+        "worth": 1000
+    },
+    {
+        "id": 24,
+        "name": "Thế Chương",
+        "dob": "2011-06-17",
+        "position": "ST",
+        "region": "Russian",
+        "club": "Manchester United",
+        "worth": 1000
+    },
+    {
+        "id": 25,
+        "name": "Thế Chương",
+        "dob": "2011-06-17",
+        "position": "ST",
+        "region": "Russian",
+        "club": "Manchester United",
+        "worth": 1000
     }
 ]
