@@ -122,6 +122,6 @@ class PlayerManager:
         matched_players = []
         for player in self.players_list:
             if search_name.lower() in player.name.lower():
-                matched_players.append(player.__dict__)
+                matched_players.append(player)
                 player.show_info()
         return matched_players

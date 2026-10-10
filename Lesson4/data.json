@@ -223,5 +223,23 @@
         "region": "Russian",
         "club": "Manchester United",
         "worth": 1000
+    },
+    {
+        "id": 26,
+        "name": "Thế Chương",
+        "dob": "2011-06-17",
+        "position": "ST",
+        "region": "Russian",
+        "club": "Manchester United",
+        "worth": 1000
+    },
+    {
+        "id": 27,
+        "name": "Thế Chương",
+        "dob": "2011-06-17",
+        "position": "ST",
+        "region": "Russian",
+        "club": "Manchester United",
+        "worth": 1000
     }
 ]
