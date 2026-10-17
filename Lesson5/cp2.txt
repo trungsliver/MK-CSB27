@@ -1,0 +1,11 @@
+Quy tắc đặt tên folder: [TenLop]_[HoTen]_CP1
+VD: CSB27_DucTrung_CP1
+
+Yêu cầu: trong folder có 2 file: 
+    - main.py
+    - tracnghiem.txt (ghi đáp án trắc nghiệm vào file này)
+
+Link đề bài: shorturl.at/DFeGI
+
+Hạn nộp: 15h15
+

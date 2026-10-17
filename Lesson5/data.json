@@ -1,0 +1,26 @@
+[
+    {
+        "name": "trung",
+        "grades": [
+            10.0,
+            8.0
+        ],
+        "avg_grade": 9.0
+    },
+    {
+        "name": "chương",
+        "grades": [
+            9.0,
+            7.0
+        ],
+        "avg_grade": 8.0
+    },
+    {
+        "name": "dũng",
+        "grades": [
+            6.0,
+            8.0
+        ],
+        "avg_grade": 7.0
+    }
+]
