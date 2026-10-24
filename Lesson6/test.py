@@ -21,4 +21,4 @@ while guess != number:
     guess = int(input("\nHãy đoán lại số đặc biệt (1-100): "))
     count += 1
 
-print(f"Bạn đã đoán đúng số đặc biệt {number} sau {count} lần đoán.")
+print(f" Bạn đã đoán đúng số đặc biệt {number} sau {count} lần đoán.")
