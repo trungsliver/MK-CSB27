@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 
 class Student:
     def __init__(self, name):
@@ -25,6 +26,25 @@ class Student:
 class GradeManager:
     def __init__(self):
         self.students = []
+        self.load_data()
+
+    def load_data(self):
+        data_file = Path(__file__).with_name("data.json")
+        try:
+            with data_file.open("r", encoding="utf-8") as file:
+                data = json.load(file)
+        except FileNotFoundError:
+            print(f"Không tìm thấy file dữ liệu {data_file}.")
+            return
+        except json.JSONDecodeError:
+            print(f"File dữ liệu {data_file} không đúng định dạng JSON.")
+            return
+
+        for student_data in data:
+            student = Student(student_data["name"])
+            student.grades = student_data.get("grades", [])
+            student.avg_grade = student.calculate_average()
+            self.students.append(student)
 
     def add_student(self, name):
         # Kiểm tra xem học sinh đã tồn tại chưa
