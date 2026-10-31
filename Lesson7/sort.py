@@ -33,7 +33,7 @@ def selection_sort_2(arr:list):     # Độ phức tạp: O(n^2)
 print("Selection Sort 2:", selection_sort_2(arr.copy()))
 
 # ============== BUBBLE SORT ==============
-def bubble_sort(arr:list):
+def bubble_sort(arr:list):      # Độ phức tạp: O(n^2)
     # Duyệt danh sách
     for i in range(len(arr)):
         # So sánh các phần tử cạnh nhau
@@ -44,3 +44,22 @@ def bubble_sort(arr:list):
     return arr
 
 print("Bubble Sort:", bubble_sort(arr.copy()))
+
+# =============== INSERTION SORT ================
+    # Giống xếp bài tú lơ khơ trên tay
+def insertion_sort(arr):        # Độ phức tạp: O(n^2)
+    # Duyệt từ phần tử thứ hai đến phần tử cuối cùng
+    for i in range(1, len(arr)):
+        # Phần tử cần chèn
+        key = arr[i]
+        # So sánh key với các phần tử trước nó  
+        j = i - 1
+        # Dịch chuyển các phần tử lớn hơn key về bên phải
+        while j >= 0 and key < arr[j]:
+            arr[j + 1] = arr[j]
+            j -= 1
+        # Chèn key vào vị trí đúng
+        arr[j + 1] = key
+    return arr
+
+print("Insertion Sort:", insertion_sort(arr))
