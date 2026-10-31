@@ -15,7 +15,7 @@ def selection_sort_1(arr:list):     # Độ phức tạp: O(n^2)
         arr.remove(max_value)
     return arr_sorted
 
-print("Selection Sort 1:", selection_sort_1(arr.copy()))
+# print("Selection Sort 1:", selection_sort_1(arr.copy()))
 
     # Cách 2 (video youtube)
 def selection_sort_2(arr:list):     # Độ phức tạp: O(n^2)
@@ -30,7 +30,7 @@ def selection_sort_2(arr:list):     # Độ phức tạp: O(n^2)
         # Đổi chỗ arr[i] và arr[min_index]
         arr[i], arr[min_index] = arr[min_index], arr[i]
     return arr
-print("Selection Sort 2:", selection_sort_2(arr.copy()))
+# print("Selection Sort 2:", selection_sort_2(arr.copy()))
 
 # ============== BUBBLE SORT ==============
 def bubble_sort(arr:list):      # Độ phức tạp: O(n^2)
@@ -43,7 +43,7 @@ def bubble_sort(arr:list):      # Độ phức tạp: O(n^2)
                 arr[j], arr[j+1] = arr[j+1], arr[j]
     return arr
 
-print("Bubble Sort:", bubble_sort(arr.copy()))
+# print("Bubble Sort:", bubble_sort(arr.copy()))
 
 # =============== INSERTION SORT ================
     # Giống xếp bài tú lơ khơ trên tay
@@ -62,4 +62,4 @@ def insertion_sort(arr):        # Độ phức tạp: O(n^2)
         arr[j + 1] = key
     return arr
 
-print("Insertion Sort:", insertion_sort(arr))
+# print("Insertion Sort:", insertion_sort(arr))
