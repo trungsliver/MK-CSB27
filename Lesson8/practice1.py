@@ -67,23 +67,87 @@ print("Mảng sau khi sắp xếp là:", sort_colors(nums))
 # Bài 1: Viết một hàm sum_odd(numbers) để tính tổng các số lẻ trong một danh sách numbers.
 # 	YC1: Hàm nhận vào một danh sách các số nguyên.
 # 	YC2: Hàm trả về tổng các số lẻ trong danh sách đó.
+def sum_odd(numbers): # Độ phức tạp O(n)
+    total = 0
+    for num in numbers:
+        if num % 2 != 0:
+            total += num
+    return total
 
 # Bài 2: Viết một hàm is_prime(n) để kiểm tra xem một số nguyên dương n có phải là số nguyên tố hay không.
 # 	YC1: Hàm nhận vào một số nguyên dương n.
 # 	YC2: Hàm trả về True nếu n là số nguyên tố, ngược lại trả về False.
+def is_prime(n): # Độ phức tạp O(√n)
+    if n <= 1:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+def is_prime2(n): # Độ phức tạp O(n)
+    count = 0
+    for i in range(1, n+1):
+        if n % i == 0:
+            count += 1
+    if count == 2: return True
+    else: return False
 
 # Bài 3: Viết một hàm count_words(s) để đếm số lượng từ trong một chuỗi s.
 # 	YC1: Hàm nhận vào một chuỗi ký tự s.
 # 	YC2: Hàm trả về số lượng từ trong chuỗi đó.
+def count_words(s): # Độ phức tạp O(n)
+    # split(): tách chuỗi sau mỗi khoảng trắng
+    words = s.strip().split()
+    return len(words)
 
 # Bài 4: Viết một hàm sum_of_digits(n) để tính tổng các chữ số của một số nguyên dương n.
 # 	YC1: Hàm nhận vào một số nguyên dương n.
 # 	YC2: Hàm trả về tổng các chữ số của n.
+def sum_of_digits(n): # Độ phức tạp O(d) với d là số chữ số của n
+    total = 0
+    while n > 0:
+        digit = n % 10
+        total += digit
+        n //= 10
+    return total
+
+def sum_of_digits2(n): # Độ phức tạp O(log(n)) 
+    total = 0
+    # len(str(n)): số chữ số của n
+    for i in range(len(str(n))):
+        total += int(str(n)[i])
+    return total
 
 # Bài 5: Viết một hàm find_max(numbers) để tìm vị trí số lớn nhất trong một danh sách numbers.
 # 	YC1: Hàm nhận vào một danh sách các số nguyên.
 # 	YC2: Hàm trả về vị trí số lớn nhất trong danh sách đó.
+def find_max(numbers): # Độ phức tạp O(n)
+    max_value = numbers[0]
+    max_index = 0
+    for i in range(1, len(numbers)):
+        if numbers[i] > max_value:
+            max_value = numbers[i]
+            max_index = i
+    return max_index
 
+def find_max2(numbers): # Độ phức tạp O(n)
+    max_value = max(numbers)
+    for i in range(len(numbers)):
+        if numbers[i] == max_value:
+            return i
+        
 # Bài 6: Viết một hàm sum_to_n(n) để tính tổng các số từ 1 đến n.
 # 	YC1: Hàm nhận vào một số nguyên dương n.
 # 	Yc2: Hàm trả về tổng các số từ 1 đến n.
+
+    # Cách 1:
+def sum_to_n(n):    # Độ phức tạp: O(n)
+    total = 0
+    for i in range(1, n+1):
+        total += i
+    return total
+
+    # Cách 2: công thức gauss
+def sum_to_n2(n):   # Độ phức tạp: O(1)
+    return n * (n + 1) / 2
