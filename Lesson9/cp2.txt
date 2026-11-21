@@ -1,0 +1,6 @@
+Làm bài kiểm tra trên denise
+
+Tự luận:
+- Bài giải bằng python (viết bằng hàm/chương trình con)
+- Đánh giá độ phức tạp của thuật toán (đánh gia chi tiết)
+- Kiểm tra lỗi người dùng nhập (dùng try - except)
